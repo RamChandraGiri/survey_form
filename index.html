@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lockdown Experience Survey Page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    </head>
+
+    <body translate="no">
+        <h1 id="title">Lockdown Experience Survey Form</h1>
+        <p id="description">Thank you for letting us know your experience.</p>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required> 
+            </div>
+            
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>  
+            </div>
+            
+            <div class="form-group">
+                <label for="number" id="number-label">Age(optional)</label>
+                <input type="number" id="number" name="age" placeholder="Enter your Age" min="0" max="129"> 
+            </div>
+            
+            <div class="form-group">
+                <label for="dropdown" id="dropdown-label">Which option best describes what you are feeling right now?</label>
+            <select id="dropdown" aria-placeholder="Select your experience">
+                <option value="good">Good</option>
+                <option value="normal">Normal</option>
+                <option value="bad">Bad</option>
+            </select>
+            </div>
+            
+            <div class="form-group">
+                <fieldset>
+                    <legend>Should this lockdown be extended for some more time?</legend>
+                    <input id="one" type="radio" name="items" value="one">
+                    <label for="one">Definitely</label><br>
+                    <input id="two" type="radio" name="items" value="two">
+                    <label for="two">Maybe</label><br>
+                    <input id="three" type="radio" name="items" value="three">
+                    <label for="three">Not sure</label>
+                </fieldset>
+            </div>
+            
+            <div class="form-group">
+                <fieldset>
+                    <legend>What do you think are the correct advices against COVID-19? (Check all that apply)</legend>
+                    <input id="one" type="checkbox" name="items" value="one">
+                    <label for="one">Wash your hands frequently</label><br>
+                    <input id="two" type="checkbox" name="items" value="two">
+                    <label for="two">Maintain social distancing</label><br>
+                    <input id="three" type="checkbox" name="items" value="three">
+                    <label for="three">Avoid touching eyes, nose and mouth</label><br>
+                    <input id="four" type="checkbox" name="items" value="four">
+                    <label for="four">Practice respiratory hygiene</label><br>
+                    <input id="five" type="checkbox" name="items" value="five">
+                    <label for="five">If you have fever, cough and difficulty breathing, seek medical care early</label><br>
+                    <input id="six" type="checkbox" name="items" value="six">
+                    <label for="six">Stay informed and follow advice given by your healthcare provider</label>
+                </fieldset>
+            </div>
+            
+            <div class="form-group">
+                <label for="textarea" id="textarea-label">Any comments or suggestions?</label><br>
+                <textarea id="textarea" placeholder="Enter your comment here.."></textarea> 
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+            
+        </form>
+    </body>
+</html>

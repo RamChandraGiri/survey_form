@@ -7,27 +7,35 @@
     </head>
 
     <body translate="no">
+        
         <h1 id="title">Lockdown Experience Survey Form</h1>
         <p id="description">Thank you for letting us know your experience.</p>
+      
+
+        <div class="container">
+            
+            <div class="content left" id="hide-content">1</div>
+
+        <div class="content middle">
 
         <form id="survey-form">
             <div class="form-group">
-                <label for="name" id="name-label">Name</label>
+                <label for="name" id="name-label">Name</label><br>
                 <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required> 
             </div>
             
             <div class="form-group">
-                <label for="email" id="email-label">Email</label>
+                <label for="email" id="email-label">Email</label><br>
                 <input type="email" id="email" name="email" class="form-control" placeholder="Enter your Email" required>  
             </div>
             
             <div class="form-group">
-                <label for="number" id="number-label">Age(optional)</label>
+                <label for="number" id="number-label">Age(optional)</label><br>
                 <input type="number" id="number" name="age" class="form-control" placeholder="Enter your Age" min="0" max="129"> 
             </div>
             
             <div class="form-group">
-                <label for="dropdown" id="dropdown-label">Which option best describes what you are feeling right now?</label>
+                <label for="dropdown" id="dropdown-label">Which option best describes what you are feeling right now?</label><br>
             <select id="dropdown" aria-placeholder="Select your experience">
                 <option value="good">Good</option>
                 <option value="normal">Normal</option>
@@ -73,6 +81,13 @@
             <div class="form-group">
                 <button type="submit" id="submit">Submit</button>
             </div>
+
+            
+
+        </div>
+        <div class="content right" id="hide-content"> 3</div>
+    </div>
+            
             
         </form>
     </body>
